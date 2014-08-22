@@ -1,0 +1,301 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+/* comment out list styles
+ol, ul {
+	list-style: none; 
+} */
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+/* Main CSS */
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background-color: #deefe9;
+	background: no-repeat -webkit-linear-gradient(top, #deefe9, #f2f9f6);
+	background: no-repeat    -moz-linear-gradient(top, #deefe9, #f2f9f6);
+	background: no-repeat     -ms-linear-gradient(top, #deefe9, #f2f9f6);
+	background: no-repeat         linear-gradient(top, #deefe9, #f2f9f6);
+	height: auto;
+	margin: auto;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: bold;
+	color: #333;
+	margin: 0 50px 50px 50px;
+	padding-top: 50px;
+}
+
+h2 {
+	font-size: 20px;
+	display: block;
+	margin-bottom: 15px;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #333;
+}
+
+a:visited {
+	font-weight: bold;
+	color: #333;
+}
+
+a:hover {
+	color: green;
+}
+
+.button {
+	border-radius: 1px;
+}
+
+ul.no-bullet-list li {
+	display: inline-block;
+	padding-right: 15px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+ul.bullet-list {
+	list-style-type: disc;
+	font-size: 11px;
+	padding: 0 5px 0 0;
+	margin-bottom: 0;
+	background: none;
+}
+
+ul.no-bullet-list {
+	list-style: none;
+}
+
+/* Style the header and its elements */
+
+header {
+	width: 690px;
+	height: 94px;
+	position: relative;
+	background-color: transparent;
+	overflow: hidden;
+	z-index: 999;
+	margin: 15px auto 15px auto;
+	vertical-align: bottom;
+}
+
+#logo {
+	margin: 30px 210px 0 0;
+	float: left;
+	width: 150px;
+	height: 50px;
+	vertical-align: baseline;
+}
+
+#sign-up-log-in-wrapper {
+	float: right;
+	margin-top: 75px;
+	width: 300px;
+	vertical-align: bottom;
+	background: transparent;
+	text-align: right;
+}
+
+#sign-up {
+	border-right: solid 1px #d0d0d0;
+}
+
+#sign-up, #log-in {
+	padding: 0 10px 0 10px;
+
+}
+
+
+
+/*********************************************/
+/* Style center area and its elements */
+section {
+	background-color: #fff;
+	width: 690px;
+	height: 741px;
+	margin: auto;
+	vertical-align: top;
+	box-shadow: 2px 2px 2px 2px #d8d8d8;
+	border-radius: 2px;
+}
+
+section, aside {
+	vertical-align: top;
+}
+
+#left-column {
+	width: 300px;
+	background: transparent;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+#right-column {
+	width: 197px;
+	background: transparent;
+	height: 450px;
+	display: block;
+	float: right;
+	border-left: solid 1px #d0d0d0;
+	padding-left: 25px;
+	right: 10px;
+	position: relative;
+	display: inline-block;
+}
+
+aside {
+	background-color: #f5f5f5;
+	padding: 21px 17px 19px 40px;
+	height: 140px;
+	width: 145px;
+	float: right;
+	font-weight: 500;
+	color: #666;
+	text-align: left;
+}
+
+#tips-header {
+	margin-left: -15px;
+}
+
+aside a:link, aside a:hover {
+	color: #666;
+}
+
+input:focus {
+	outline: 1px solid #b8b8b8;
+}
+
+
+.email, #country, .pwd, #zip, #checkbox, #sign-up-button {
+	border: 1px solid #b8b8b8;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	height: 25px;
+}
+
+.email, #country, .pwd {
+	width: 230px;
+}
+
+#checkbox {
+	padding-right: 2px;
+	width: 13px;
+	height: 13px;
+}
+
+#sign-up-button {
+	color: #fff;
+	background-color: #fbb450;
+	background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+	background-image:    -moz-linear-gradient(top, #fbb450, #f89406);
+	background-image:     -ms-linear-gradient(top, #fbb450, #f89406);
+	background-image:         linear-gradient(top, #fbb450, #f89406);
+	border-top-color: #f89406;
+	border-right-color: #f89406;
+	border-left-color: #489406;
+	border-bottom-color: #ad6704;
+	width: 72px;
+	height: 30px;
+	margin: 25px 0 25px 0;
+}
+
+#terms {
+	color: blue;
+}
+
+#privacy {
+	text-decoration: underline;
+}
+
+
+/*******************************************/
+/* Style footer and its elements */
+
+footer {
+	position: relative;
+	width: 690px;
+	height: 80px;
+	bottom: 0;
+	background-color: transparent;
+	margin: auto;
+	padding-top: 20px;
+	font-size: 11px;
+	color: #666;
+	text-align: center;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: #666;
+}
+
+#footer-links {
+	margin-bottom: 20px;
+	width: 100%;
+	background-color: transparent;
+}

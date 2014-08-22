@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+	<title>Practicing Forms</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<ul class="no-bullet-list">
+			<li id="logo">
+				<a href="index.html">
+					<img src="https://images.mint.com/web-client/images/backgrounds/mint-dot-com-logo.png">
+				</a>
+			</li>
+			<li>
+				<div id="sign-up-log-in-wrapper">
+					<ul class="no-bullet-list">
+						<li id="sign-up">
+							<a href="#"><strong>Sign up</strong></a>
+						</li>
+						<li id="log-in">
+							<a href="#">Log in</a>
+						</li>
+					</ul>
+			</li>
+		</ul>
+	</header>
+	<section>
+		<h1>Create a new account</h1>
+		<div id="left-column">
+			<form>
+				<h3>Your Email</h3><br>
+				<input required type="email" class="email"><br>
+				<h3>Confirm Email</h3><br>
+				<input required type="email" class="email">
+				<fieldset>
+					<p>
+						<label><h3>Country</h3></label><br>
+						<select id="country">
+							<option value="USA">USA</option>
+							<option value="Canada">Canada</option>
+						</select>
+					</p>
+				</fieldset>
+				<h3>Zip Code</h3><br>
+				<input required type="text" name="zip" id="zip"><br>
+				<h3>Password</h3><br>
+				<input required type="password" name="pwd" class="pwd"><br>
+				<h3>Confirm Password</h3><br>
+				<input required type="password" name="pwd" class="pwd"><br>
+				<input required type="checkbox" name="terms" id="checkbox" value="agree"> Yes, I agree to the Mint <a id="terms" href="#">Terms of Use</a>.<br>
+				<input type="submit" id="sign-up-button" class="button" value="Sign up">
+			</form>
+		</div>
+		<div id="right-column">
+			<aside>
+				<h2>
+					<div id="tips-header">Why you'll love it</div>
+				</h2>
+				<ul class="bullet-list">
+					<li>See all your accounts in one place
+					</li><br>
+					<li>Set a budget and pay down your debt
+					</li><br>
+					<li>Find the best ways to grow your money
+					</li><br>
+					<li>Stay <a id="privacy" href="#">safe and secure</a></li><br>
+				</ul>
+			</aside>
+		</div>
+	</section>
+	<footer>
+		<div id="footer-links">
+			<ul class="no-bullet-list">
+				<li>
+					<a href="#">Get Help</a>
+				</li>
+				<li>
+					<a href="#">About Us</a>
+				</li>
+				<li>
+					<a href="#">How We Keep You Safe</a>
+				</li>
+				<li>
+					<a href="#">Privacy &amp; Security</a>
+				</li>
+				<li>
+					<a href="#">Terms of Use</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="no-bullet-list">
+			<li>Norton Security logo</li>
+			<li>TRUSTe logo</li>
+		</ul>
+	</footer>
+</body>
+</html>
